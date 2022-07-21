@@ -154,19 +154,6 @@ os_check(){
             output "Unsupported AlmaLinux version. Only AlmaLinux 8 is supported."
             exit 2
         fi
-    elif [ "$lsb_dist" != "ubuntu" ] && [ "$lsb_dist" != "debian" ] && [ "$lsb_dist" != "fedora" ] && [ "$lsb_dist" != "centos" ] && [ "$lsb_dist" != "rhel" ] && [ "$lsb_dist" != "rocky" ] && [ "$lsb_dist" != "almalinux" ]; then
-        output "Unsupported operating system."
-        output ""
-        output "Supported OS:"
-        output "Ubuntu: 20.04"
-        output "Debian: 11"
-        output "Fedora: 35"
-        output "CentOS Stream: 8"
-        output "Rocky Linux: 8"
-	output "AlmaLinux: 8"
-        output "RHEL: 8"
-        exit 2
-    fi
 }
 
 install_options(){
